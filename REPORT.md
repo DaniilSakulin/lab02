@@ -335,8 +335,57 @@ Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To http://github.com/DaniilSakulin/lab02.git
    27d22a5..cf0902e  master -> master
-   ```
+```
    
 5. Убеждаюсь, что в pull-request появились конфликты: https://github.com/DaniilSakulin/lab02/pull/2
 
-6.
+6. Пытаюсь влить ветку patch2 в master:
+```
+$ git checkout patch2
+Switched to branch 'patch2'
+Your branch is up to date with 'origin/patch2'.
+$ git merge master
+Auto-merging hello_world.cpp
+CONFLICT (content): Merge conflict in hello_world.cpp
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+7. Исправляю конфликт:
+
+```
+$ nano hello_world.cpp
+```
+ 
+```
+#include <iostream>
+/*
+* Main function.
+*/
+int main(){
+// reas user input
+std::string name;
+std::cin>>name;
+// write to console
+std::cout<<"Hello world from "<<name<<std::endl;
+return 0;
+}
+```
+   
+```
+$ git add hello_world.cpp
+$ git commit -m "real"
+[patch2 c436fe9] real
+$ git push
+Counting objects: 47, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (46/46), done.
+Writing objects: 100% (47/47), 13.04 KiB | 1.45 MiB/s, done.
+Total 47 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas: 100% (14/14), completed with 2 local objects.
+To http://github.com/DaniilSakulin/lab02.git
+   d25d2b0..c436fe9  patch2 -> patch2
+```
+
+8. Убеждаюсь, что в pull-request пропали конфликты: https://github.com/DaniilSakulin/lab02/pull/2
+
+9.
