@@ -2,6 +2,8 @@
 
 Работу выполнил: Сакулин Даниил
 
+Часть 1.
+
 1. Создаю пустой репозиторий на сервисе GitHub: https://github.com/DaniilSakulin/lab02
 
 2. Выполняю инструкцию по созданию первого коммита на странице репозитория, созданного на предыдущем шаге:
@@ -99,4 +101,32 @@ To http://github.com/DaniilSakulin/lab02.git
 aaa222e..3523362  master -> master
 ```
 
-9. Проверяю историю коммитов на GitHub'е: https://github.com/
+9. Проверяю историю коммитов на GitHub'е: https://github.com/DaniilSakulin/lab02/commits/master
+
+Часть 2.
+
+1. В локальной копии репозитория создаю локальную ветку patch1:
+
+```
+$ git checkout -b patch1
+Switched to a new branch 'patch1'
+```
+
+2. Вношу изменения в ветке patch1 по исправлению кода и избавления от using namespace std:
+
+```
+$ nano hello_world.cpp
+```
+
+```
+#include <iostream>
+int main(){
+std::string name;
+std::cin>>name;
+std::cout<<"Hello world from "<<name<<std::endl;
+return 0;
+}
+```
+
+3. Коммичу и пушу локальную ветку в удалённый репозиторий:
+
