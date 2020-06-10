@@ -84,3 +84,15 @@ $ git commit -m 'Read user name commit'
 1 file changed, 3 insertions(+), 1 deletion(-)
 ```
 
+Отправляю изменения в удалённый репозиторий:
+
+```
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.01 KiB | 2.01 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:DaniilSakulin/lab-02.git
+      8c50548..66672d8  master -> master
