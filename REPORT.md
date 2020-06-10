@@ -388,4 +388,4 @@ To http://github.com/DaniilSakulin/lab02.git
 
 8. Убеждаюсь, что в pull-request пропали конфликты: https://github.com/DaniilSakulin/lab02/pull/2
 
-9.
+9. В удалённом репозитории выполняю слияние PR patch2 -> master и удаляю ветку patch2 в удаленном репозитории: https://github.com/DaniilSakulin/lab02/commit/3322a87c3eeb8eec0c014ab39f397a34959dfadb
