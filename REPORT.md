@@ -257,11 +257,38 @@ Deleted branch patch1 (was 284a47b).
 ```
 $ git checkout -b patch2
 Switched to a new branch 'patch2'
+$ git push --set-upstream origin patch2
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'patch2' on GitHub by visiting:
+remote:      https://github.com/DaniilSakulin/lab02/pull/new/patch2
+remote:
+To http://github.com/DaniilSakulin/lab02.git
+ * [new branch]      patch2 -> patch2
+Branch 'patch2' set up to track remote branch 'patch2' from 'origin'.
 ```
 
 2. Изменяю code style с помощью утилиты clang-format.
 
 ```
 $ clang-format -i -style=Mozilla hello_world.cpp
+```
+
+3. Коммичу, пушу и создаю pull-request patch2 -> master
+
+```
+$ git add hello_world.cpp
+$ git commit -m "New style"
+[patch2 27bdc57] New style
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To http://github.com/DaniilSakulin/lab02.git
+   3523362..27bdc57  patch2 -> patch2
 ```
 
