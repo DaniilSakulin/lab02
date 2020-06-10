@@ -149,11 +149,11 @@ To http://github.com/DaniilSakulin/lab02.git
 Branch 'patch1' set up to track remote branch 'patch1' from 'origin'.
 ```
 
-4. Проверяю, что ветка patch1 доступна в удалённом репозитории.: https://github.com/DaniilSakulin/lab02/tree/patch1
+4. Проверяю, что ветка patch1 доступна в удалённом репозитории: https://github.com/DaniilSakulin/lab02/tree/patch1
 
 5. Создаю pull-request из patch1 в master: https://github.com/DaniilSakulin/lab02/pull/1
 
-6. В локальной копии в ветке patch1 добавляю в исходный код комментарии.:
+6. В локальной копии в ветке patch1 добавляю в исходный код комментарии:
 
 ```
 $ nano hello_world.cpp
@@ -189,3 +189,5 @@ To http://github.com/DaniilSakulin/lab02.git
 ```
 
 8. Проверяю, что новые изменения есть в созданном на шаге 5 pull-request: https://github.com/DaniilSakulin/lab02/pull/1
+
+9. В удалённом репозитории выполняю слияние PR patch1 -> master и удаляю ветку patch1 в удаленном репозитории.
