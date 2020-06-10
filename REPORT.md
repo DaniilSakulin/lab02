@@ -57,3 +57,30 @@ $ git commit -m 'HELLO_WORLD commit'
 1 file changed, 6 insertions(+)
 create mode 100644 hello_world.cpp
 ```
+
+6. Изменяю исходный код так, чтобы программа через стандартный поток ввода запрашивала имя пользователя. А в стандартный поток вывода печаталось сообщение Hello world from @name, где @name имя пользователя:
+
+```
+$ nano hello_world.cpp
+```
+
+```
+#include <iostream>
+using namespace std;
+int main(){
+string name;
+cin>>name;
+cout<<"Hello world from "<<name<<endl;
+return 0;
+}
+```
+
+7. Коммичу новую версию программы:
+
+```
+$ git add hello_world.cpp
+$ git commit -m 'Read user name commit'
+[master cbe2632] Read user name commit
+1 file changed, 3 insertions(+), 1 deletion(-)
+```
+
