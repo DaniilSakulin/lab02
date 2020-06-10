@@ -1,8 +1,12 @@
 #include <iostream>
-using namespase std;
+/*
+* Main function
+*/
 int main(){
-string name;
-cin>>name;
-cout<<"Hello world from "<<name<<endl;
+// reas user input
+std::string name;
+std::cin>>name;
+// write to console
+std::cout<<"Hello world from "<<name<<endl;
 return 0;
 }
