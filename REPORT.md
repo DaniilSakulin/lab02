@@ -297,12 +297,19 @@ https://github.com/DaniilSakulin/lab02/pull/2
 4. В ветке master в удаленном репозитории изменяю комментарии:
 
 ```
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+$ nano hello_world.cpp
+```
+
+```
 #include <iostream>
 /*
 * Main function.
 */
 int main(){
-// read user input
+// reas user input
 std::string name;
 std::cin>>name;
 // write to console
@@ -311,6 +318,25 @@ return 0;
 }
 ```
 
+```
+$ git add hello_world.cpp
+yrojiobwuha@yrojiobwuha-Aspire-A315-21G:~/workspace/projects/projects/lab02$ git commit -m "FAKE"
+[master 9f5cdb6] FAKE
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+$ git push
+Username for 'https://github.com': DaniilSakulin
+Password for 'https://DaniilSakulin@github.com':
+warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 462 bytes | 462.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To http://github.com/DaniilSakulin/lab02.git
+   27d22a5..cf0902e  master -> master
+   ```
+   
 5. Убеждаюсь, что в pull-request появились конфликты: https://github.com/DaniilSakulin/lab02/pull/2
 
 6.
