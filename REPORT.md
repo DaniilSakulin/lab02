@@ -292,3 +292,25 @@ To http://github.com/DaniilSakulin/lab02.git
    3523362..27bdc57  patch2 -> patch2
 ```
 
+https://github.com/DaniilSakulin/lab02/pull/2
+
+4. В ветке master в удаленном репозитории изменяю комментарии:
+
+```
+#include <iostream>
+/*
+* Main function.
+*/
+int main(){
+// read user input
+std::string name;
+std::cin>>name;
+// write to console
+std::cout<<"Hello world from "<<name<<std::endl;
+return 0;
+}
+```
+
+5. Убеждаюсь, что в pull-request появились конфликты: https://github.com/DaniilSakulin/lab02/pull/2
+
+6.
