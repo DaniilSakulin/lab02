@@ -25,3 +25,4 @@ To http://github.com/DaniilSakulin/lab02.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
+3. Создаю файл hello_world.cpp в плохом стиле:
