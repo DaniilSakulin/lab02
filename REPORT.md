@@ -252,4 +252,16 @@ Deleted branch patch1 (was 284a47b).
 
 Часть 3.
 
-1. 
+1. Создаю новую локальную ветку patch2
+
+```
+$ git checkout -b patch2
+Switched to a new branch 'patch2'
+```
+
+2. Изменяю code style с помощью утилиты clang-format.
+
+```
+$ clang-format -i -style=Mozilla hello_world.cpp
+```
+
