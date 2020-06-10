@@ -130,3 +130,22 @@ return 0;
 
 3. Коммичу и пушу локальную ветку в удалённый репозиторий:
 
+```
+$ git push --set-upstream origin patch1
+warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
+Counting objects: 64, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (64/64), 13.17 KiB | 1.88 MiB/s, done.
+Total 64 (delta 15), reused 0 (delta 0)
+remote: Resolving deltas: 100% (15/15), done.
+remote:
+remote: Create a pull request for 'patch1' on GitHub by visiting:
+remote:      https://github.com/DaniilSakulin/lab02/pull/new/patch1
+remote:
+To http://github.com/DaniilSakulin/lab02.git
+ * [new branch]      patch1 -> patch1
+Branch 'patch1' set up to track remote branch 'patch1' from 'origin'.
+```
+
+4. Проверяю наличие ветки на GitHub'е: https://github.com/
