@@ -190,4 +190,4 @@ To http://github.com/DaniilSakulin/lab02.git
 
 8. Проверяю, что новые изменения есть в созданном на шаге 5 pull-request: https://github.com/DaniilSakulin/lab02/pull/1
 
-9. В удалённом репозитории выполняю слияние PR patch1 -> master и удаляю ветку patch1 в удаленном репозитории.
+9. В удалённом репозитории выполняю слияние PR patch1 -> master и удаляю ветку patch1 в удаленном репозитории: https://github.com/DaniilSakulin/lab02/commit/00b6740d8de6b233776f2552cbe1527261f17405
