@@ -3,9 +3,7 @@
 Работу выполнил: Сакулин Даниил
 
 1. Создаю пустой репозиторий на сервисе GitHub: https://github.com/DaniilSakulin/lab02
-
 2. Выполняю инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге:
-
 ```
 $ git init
 Reinitialized existing Git repository in /home/yrojiobwuha/workspace/projects/projects/lab02/.git/
