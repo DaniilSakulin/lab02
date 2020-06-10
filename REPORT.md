@@ -88,12 +88,15 @@ $ git commit -m 'Read user name commit'
 
 ```
 $ git push
-Enumerating objects: 7, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 12 threads
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (6/6), 2.01 KiB | 2.01 MiB/s, done.
-Total 6 (delta 0), reused 0 (delta 0)
-To github.com:DaniilSakulin/lab-02.git
-a81f784..cbe2632  master -> master
+warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
+Counting objects: 11, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.20 KiB | 1.20 MiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To http://github.com/DaniilSakulin/lab02.git
+aaa222e..3523362  master -> master
 ```
+
+9. Проверяю историю коммитов на GitHub'е: https://github.com/
