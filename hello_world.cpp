@@ -3,7 +3,7 @@
 * Main function
 */
 int main(){
-// read user input
+// reas user input
 std::string name;
 std::cin>>name;
 // write to console
