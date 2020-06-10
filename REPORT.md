@@ -191,3 +191,65 @@ To http://github.com/DaniilSakulin/lab02.git
 8. Проверяю, что новые изменения есть в созданном на шаге 5 pull-request: https://github.com/DaniilSakulin/lab02/pull/1
 
 9. В удалённом репозитории выполняю слияние PR patch1 -> master и удаляю ветку patch1 в удаленном репозитории: https://github.com/DaniilSakulin/lab02/commit/00b6740d8de6b233776f2552cbe1527261f17405
+
+10. Локально выполняю pull:
+
+```
+$ git pull
+remote: Enumerating objects: 32, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 26 (delta 8), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (26/26), done.
+From http://github.com/DaniilSakulin/lab02
+   3523362..5a0a645  master     -> origin/master
+Your configuration specifies to merge with the ref 'refs/heads/patch1'
+from the remote, but no such ref was fetched.
+```
+
+11. С помощью команды git log просмотриваю историю в локальной версии ветки master:
+
+```
+$ git log
+commit 284a47be00126333d57ddfe27c8c04ad48134a9a (HEAD -> patch1, origin/patch1)
+Author: DaniilSakulin <sakulin_daniil@mail.ru>
+Date:   Wed Jun 10 17:59:12 2020 +0300
+    Program with comments
+commit 7bc5b2ae7e4e2b815f40f8753e519cf397aba3a5
+Author: DaniilSakulin <sakulin_daniil@mail.ru>
+Date:   Wed Jun 10 17:35:50 2020 +0300
+    Right version of program
+commit cbe26324663f527406b372cf55627d68d54a5643
+Author: DaniilSakulin <sakulin_daniil@mail.ru>
+Date:   Wed Jun 10 15:26:22 2020 +0300
+    Read user name commit
+commit b0c8b3cc45a7ff568601368acdc1f17f02e58399
+Author: DaniilSakulin <sakulin_daniil@mail.ru>
+Date:   Wed Jun 10 15:14:26 2020 +0300
+    HELLO_WORLD commit
+commit cf6d372ca6a49e3dc34707053adfab65d4792c1c
+Author: DaniilSakulin <57504464+DaniilSakulin@users.noreply.github.com>
+Date:   Wed Jun 10 15:03:02 2020 +0300
+    Create README.md
+commit b7dabcc5d3500d7e682a36510dc66cb3a0ff8280
+Author: DaniilSakulin <sakulin_daniil@mail.ru>
+Date:   Wed Jun 10 15:00:38 2020 +0300
+    first commit
+```
+
+12. Удаляю локальную ветку patch1:
+
+```
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 11 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+$ git branch -d patch1
+warning: deleting branch 'patch1' that has been merged to
+         'refs/remotes/origin/patch1', but not yet merged to HEAD.
+Deleted branch patch1 (was 284a47b).
+```
+
+Часть 3.
+
+1. 
