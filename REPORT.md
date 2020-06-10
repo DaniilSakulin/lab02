@@ -26,11 +26,13 @@ To http://github.com/DaniilSakulin/lab02.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-3. Создаю файл hello_world.cpp в плохом стиле:
+3. Создаю файл hello_world.cpp в локальной копии репозитория:
 
 ```
 $ nano hello_world.cpp
 ```
+
+Реализую программу Hello world на языке C++ используя плохой стиль кода:
 
 ```
 #include <iostream>
@@ -45,4 +47,13 @@ return 0;
 
 ```
 $ git add hello_world.cpp
+```
+
+5. Коммичу изменения с осмысленным сообщением:
+
+```
+$ git commit -m 'HELLO_WORLD commit'
+[master b0c8b3c] HELLO_WORLD commit
+1 file changed, 6 insertions(+)
+create mode 100644 hello_world.cpp
 ```
