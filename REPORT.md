@@ -148,4 +148,6 @@ To http://github.com/DaniilSakulin/lab02.git
 Branch 'patch1' set up to track remote branch 'patch1' from 'origin'.
 ```
 
-4. Проверяю наличие ветки на GitHub'е: https://github.com/
+4. Проверяю наличие ветки на GitHub'е: https://github.com/DaniilSakulin/lab02/tree/patch1
+
+5. Создаю новый Pull-Request из patch1 в master: https://github.com/DaniilSakulin/lab02/pull/1
