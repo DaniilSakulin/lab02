@@ -19,7 +19,6 @@ $ git commit -m "first commit"
  create mode 100644 README.md
 $ git remote add origin https://github.com/${GITHUB_USERNAME}/lab02.git
 $ git push -u origin master
-warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
@@ -90,7 +89,6 @@ $ git commit -m 'Read user name commit'
 
 ```
 $ git push
-warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
 Counting objects: 11, done.
 Delta compression using up to 2 threads.
 Compressing objects: 100% (9/9), done.
@@ -131,8 +129,11 @@ return 0;
 3. Коммичу и пушу локальную ветку в удалённый репозиторий:
 
 ```
+$ git add hello_world.cpp
+$ git commit -m "Right version of program"
+[patch1 7bc5b2a] Right version of program
+ 1 file changed, 3 insertions(+), 4 deletions(-)
 $ git push --set-upstream origin patch1
-warning: redirecting to https://github.com/DaniilSakulin/lab02.git/
 Counting objects: 64, done.
 Delta compression using up to 2 threads.
 Compressing objects: 100% (53/53), done.
@@ -148,6 +149,43 @@ To http://github.com/DaniilSakulin/lab02.git
 Branch 'patch1' set up to track remote branch 'patch1' from 'origin'.
 ```
 
-4. Проверяю наличие ветки на GitHub'е: https://github.com/DaniilSakulin/lab02/tree/patch1
+4. Проверяю, что ветка patch1 доступна в удалённом репозитории.: https://github.com/DaniilSakulin/lab02/tree/patch1
 
-5. Создаю новый Pull-Request из patch1 в master: https://github.com/DaniilSakulin/lab02/pull/1
+5. Создаю pull-request из patch1 в master: https://github.com/DaniilSakulin/lab02/pull/1
+
+6. В локальной копии в ветке patch1 добавляю в исходный код комментарии.:
+
+```
+$ nano hello_world.cpp
+```
+
+```
+#include <iostream>
+/* 
+* Main function.
+*/
+int main(){
+// reas user input
+std::string name;
+std::cin>>name;
+// write to console
+std::cout<<"Hello world from "<<name<<std::endl;
+return 0;
+}
+```
+
+7. Коммичу и пушу локальную ветку в удалённый репозиторий:
+
+```
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To http://github.com/DaniilSakulin/lab02.git
+   7bc5b2a..284a47b  patch1 -> patch1
+```
+
+8. Проверяю, что новые изменения есть в созданном на шаге 5 pull-request: https://github.com/DaniilSakulin/lab02/pull/1
