@@ -3,7 +3,9 @@
 Работу выполнил: Сакулин Даниил
 
 1. Создаю пустой репозиторий на сервисе GitHub: https://github.com/DaniilSakulin/lab02
+
 2. Выполняю инструкцию по созданию первого коммита на странице репозитория, созданного на предыдещем шаге:
+
 ```
 $ git init
 Reinitialized existing Git repository in /home/yrojiobwuha/workspace/projects/projects/lab02/.git/
@@ -23,4 +25,24 @@ To http://github.com/DaniilSakulin/lab02.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
+
 3. Создаю файл hello_world.cpp в плохом стиле:
+
+```
+$ nano hello_world.cpp
+```
+
+```
+#include <iostream>
+using namespace std;
+int main(){
+cout<<"Hello world"<<endl;
+return 0;
+}
+```
+
+4. Добавляю файл в локальную копию репозитория:
+
+```
+$ git add hello_world.cpp
+```
